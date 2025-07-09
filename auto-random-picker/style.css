@@ -1,0 +1,40 @@
+    .widget { 
+        background: #1a1a2e; 
+        color: rgb(255, 255, 255); 
+        padding: auto;        
+        width: 100%;
+        height: 100%;
+    }
+    .character-container { 
+        display: flex; 
+        justify-content: center; 
+        gap: 20px; 
+        flex-wrap: nowrap; 
+        min-width: 450px; 
+    }
+    .character { 
+        text-align: center;
+        font-size: 100%;
+        padding: 20px; 
+        max-width: 300px; 
+    }
+    .image-container { 
+        position: relative; 
+        display: inline-block; 
+    }
+    img { 
+        width: 300px;
+        height: auto;
+    }
+    .badge { 
+        position: absolute; 
+        bottom: 5%; /* Adjust this value to position the badge higher or lower on the bottom half */
+        left: 50%; 
+        transform: translateX(-50%); 
+        width: 100px; /* Adjust badge size as needed */
+        height: auto; 
+    }
+    
+    
+    
+
