@@ -1,33 +1,53 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="./style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streamer Widget</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<script src=script.js></script>
 <body>
     <div class="widget">
-    
-        <div class="R6SiegeX">
+        <h1>Next character is:</h1>
         <div class="character-container">
-        <div class="character">
-           <div class="image-container">
-              <img src="https://cdn.r6roulette.de/attacker/Buck.png" alt="Attacker" class="operator" id="attackerImage">
-              <img src="https://cdn.r6roulette.de/attacker/Badge/Buck-Badge.png" alt="AttackerBadge" class="badge" id="attackerBadgeImage">
-           </div>
-           <h1 id="attackerName">Buck</h1>
+            
+            <div class="character" id="attackerSection" style="display: none;">
+                <div class="image-container">
+                    <img src="" alt="Attacker" id="attackerImage">
+                    <img src="https://cdn.r6roulette.de/attacker/Badge/Ace-Badge.png" alt="Attacker Badge" class="badge" id="attackerBadge">
+                </div>
+                <h2 id="attackerName">Attacker</h2>
+            </div>
+            <div class="character" id="defenderSection" style="display: none;">
+                <div class="image-container">
+                    <img src="https://cdn.r6roulette.de/defender/Amaru.png" alt="Defender" id="defenderImage">
+                    <img src="https://example.com/badge.png" alt="Badge" class="badge" id="defenderBadge">
+                </div>
+                <h2 id="defenderName">Defender</h2>
+            </div>
+            <div class="character" id="singleSection" style="display: block;">
+                <div class="image-container">
+                    <img src="" alt="Character" id="singleImage">
+                    <img src="https://example.com/badge.png" alt="Badge" class="badge" id="singleBadge">
+                </div>
+                <h2 id="singleName">Character</h2>
+            </div>
         </div>
-        <div class="character">
-            <div class="image-container">
-               <img src="https://cdn.r6roulette.de/defender/Solis.png" alt="Defender" class="operator" id="defenderImage">
-               <img src="https://cdn.r6roulette.de/defender/Badge/Solis-Badge.png" alt="DefenderBadge" class="badge" id="defenderBadgeImage">
-           </div>
-           <h1 id="defenderName">Solis</h1>
-        </div>
-        </div>
-        </div>
-
     </div>
-
+    <script src="script.js"></script>
 </body>
+</html>
 
 
+
+<!--<div class="image-container">
+               <img src="https://cdn.r6roulette.de/attacker/Buck.png" alt="Attacker" class="operator" id="attackerImage">
+               <img src="https://cdn.r6roulette.de/attacker/Badge/Buck-Badge.png" alt="AttackerBadge" class="badge" id="attackerBadgeImage">
+             </div>
+             <h1 id="attackerName">Buck</h1>
+         </div>
+         <div class="character">
+             <div class="image-container">
+                <img src="https://cdn.r6roulette.de/defender/Solis.png" alt="Defender" class="operator" id="defenderImage">
+                <img src="https://cdn.r6roulette.de/defender/Badge/Solis-Badge.png" alt="DefenderBadge" class="badge" id="defenderBadgeImage">
+            </div>-->
