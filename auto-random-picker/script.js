@@ -16,7 +16,7 @@ ws.onmessage = (event) => {
     if (data.event === 'CharacterUpdate') {
         // Handle R6S (attacker and defender)
         if (data.r6Attacker && data.r6Defender) {
-            attackerImg.src = `https://cdn.r6roulette.de/attacker/${data.r6Attacker.replace(/ /g, '_')}.png`;
+            document.getElementById('defenderImage').src = `https://cdn.r6roulette.de/attacker/${data.r6Attacker.replace(/ /g, '_')}.png`;
             document.getElementById('attackerName').textContent = data.r6Attacker;
             document.getElementById('defenderImage').src = `https://cdn.r6roulette.de/defender/${data.r6Defender.replace(/ /g, '_')}.png`;
             document.getElementById("defenderName").textContent = data.r6Defender;

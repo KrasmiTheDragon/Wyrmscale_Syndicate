@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    height: 100vh;
+    background: #f0f0f000;
+    color: rgb(255, 255, 255);
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    overflow: hidden;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 23.5);
+    font-weight: bold;
+}
+.clock-container {
+    text-align: left;    
+}
+#clock {
+    font-size: 4em;
+    margin-bottom: -10px;
+    
+}
+#date {
+    font-size: 2.25em;
+    margin-top: -10px;
+    
+}
