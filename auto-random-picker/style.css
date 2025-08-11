@@ -4,6 +4,7 @@
     padding: auto;
     width: 100%;
     text-align: center;
+    position: relative; /* Add this if not already present */
 }
 
 .character-container {
@@ -12,6 +13,12 @@
     gap: 20px;
     flex-wrap: wrap;
     min-width: 0;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.character-container.visible {
+    opacity: 1;
 }
 
 .character {
@@ -36,4 +43,40 @@ img {
     transform: translateX(-50%);
     width: 60px;
     height: auto;
+}
+
+.status-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    background: red;
+    opacity: 1;
+    transition: opacity 0.5s;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.status-overlay.connected {
+    background: green;
+}
+
+.status-overlay.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.character-fade-container {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.character-fade-container.visible {
+    opacity: 1;
 }

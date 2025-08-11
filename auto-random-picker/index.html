@@ -3,33 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Streamer Widget</title>
+    <title>Auto random character picker</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="widget">
-        <h1>Next character is:</h1>
-        <div class="character-container">            
-            <div class="character" id="attackerSection" style="display: none;">
-                <div class="image-container">
-                    <img src="https://via.placeholder.com/200" alt="Attacker" id="attackerImage">
-                    <img src="https://cdn.r6roulette.de/attacker/Badge/Ace-Badge.png" alt="Attacker Badge" class="badge" id="attackerBadge">
+        <div id="statusOverlay" class="status-overlay">Connecting...</div>
+        <div class="character-fade-container">
+            <div><h1 id="Title"></h1></div>
+            <div class="character-container">   
+                <div class="character" id="attackerSection" style="display: block;">
+                    <div class="image-container">
+                        <img src="" alt="" id="attackerImage">
+                        <img src="" alt="" class="badge" id="attackerBadge">
+                    </div>
+                    <h2 id="attackerName"></h2>
                 </div>
-                <h2 id="attackerName">Attacker</h2>
-            </div>
-            <div class="character" id="defenderSection" style="display: none;">
-                <div class="image-container">
-                    <img src="https://via.placeholder.com/200" alt="Defender" id="defenderImage">
-                    <img src="https://example.com/badge.png" alt="Badge" class="badge" id="defenderBadge">
+                <div class="character" id="defenderSection" style="display: block;">
+                    <div class="image-container">
+                        <img src="" alt="" id="defenderImage">
+                        <img src="" alt="" class="badge" id="defenderBadge">
+                    </div>
+                    <h2 id="defenderName"></h2>
                 </div>
-                <h2 id="defenderName">Defender</h2>
-            </div>
-            <div class="character" id="singleSection" style="display: block;">
-                <div class="image-container">
-                    <img src="https://via.placeholder.com/200" alt="Character" id="singleImage">
-                    <img src="https://example.com/badge.png" alt="Badge" class="badge" id="singleBadge">
+                <div class="character" id="singleSection" style="display: none;">
+                    <div class="image-container">
+                        <img src="https://cdn.r6roulette.de/defender/Badge/Solis-Badge.png" alt="Character" id="singleImage">
+                    </div>
+                    <h2 id="singleName">Character</h2>
                 </div>
-                <h2 id="singleName">Character</h2>
             </div>
         </div>
     </div>
