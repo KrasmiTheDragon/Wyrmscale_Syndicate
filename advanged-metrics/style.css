@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+#metrics {
+    display: flex;
+    flex-direction: row; /* default horizontal */
+    gap: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+#metrics.vertical {
+    flex-direction: column;
+    gap: 10px;
+}
+.metric {
+    text-align: center;
+}
+.emoji {
+    font-size: 2em;
+}
+.number {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+.loading {
+    text-align: center;
+    padding: 20px;
+}
